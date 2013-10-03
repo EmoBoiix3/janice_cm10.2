@@ -1,0 +1,9 @@
+[B][U]Build 01-10-2013[/U][/B]
+
+* PA now boots
+* RIL works
+* Audio works
+* WiFi works
+* ParanoidPrefernces work perfectly
+
+Thanks Percy_g2 @ XDA-Developers
