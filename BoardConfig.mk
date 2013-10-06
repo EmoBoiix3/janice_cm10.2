@@ -46,7 +46,6 @@ BOARD_CHARGER_RES := device/samsung/janice/res/charger
 
 # Recovery
 BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/janice/recovery/graphics.c
-BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun0/file"
 BOARD_USES_MMCUTILS := true
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
@@ -134,6 +133,10 @@ BOARD_USE_SYSFS_VSYNC_NOTIFICATION := true
 
 BOARD_EGL_NEEDS_LEGACY_FB := true
 COMMON_GLOBAL_CFLAGS += -DEGL_NEEDS_FNW
+
+#CWM recovery
+TARGET_RECOVERY_FSTAB = device/samsung/janice/rootdir/fstab.samsungjanice
+RECOVERY_FSTAB_VERSION := 2
 
 # Camera
 BOARD_CAMERA_HAVE_ISO := true
