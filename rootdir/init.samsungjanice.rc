@@ -294,7 +294,7 @@ on post-fs-data
     # give system access to ril_config
     copy -u /system/etc/ril_config /data/misc/ril_config
     chmod 0660 /data/misc/ril_config
-    chown root radio /data/misc/ril_config
+    chown root:radio /data/misc/ril_config
 
     # Create directory for STE OMX debug logs
     mkdir /data/ste-debug 0777 root root
@@ -314,13 +314,13 @@ on post-fs-data
     chmod 0500 /data/misc/psdata/sterc_script_connect_alt
     chmod 0500 /data/misc/psdata/sterc_script_connect_dun
     chmod 0500 /data/misc/psdata/sterc_script_disconnect_dun
-    chown root radio /data/misc/psdata/sterc_conf
-    chown root radio /data/misc/psdata/sterc_conf_alt
+    chown root:radio /data/misc/psdata/sterc_conf
+    chown root:radio /data/misc/psdata/sterc_conf_alt
 
     # give system access to stepscc_conf
     copy -u /system/etc/psdata/stepscc_conf /data/misc/psdata/stepscc_conf
     chmod 0660 /data/misc/psdata/stepscc_conf
-    chown root radio /data/misc/psdata/stepscc_conf
+    chown root:radio /data/misc/psdata/stepscc_conf
 
     # create var/run, var/lib for avahi
     mkdir /var
