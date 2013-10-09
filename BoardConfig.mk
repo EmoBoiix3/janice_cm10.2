@@ -46,6 +46,7 @@ BOARD_CHARGER_RES := device/samsung/janice/res/charger
 
 # Recovery
 BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/janice/recovery/graphics.c
+BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun0/file"
 BOARD_USES_MMCUTILS := true
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
@@ -125,7 +126,6 @@ BOARD_VOLD_DISC_HAS_MULTIPLE_MAJORS := true
 # Recovery
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/janice/recovery/recovery_keys.c
 BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/janice/recovery/graphics.c
-TARGET_RECOVERY_INITRC := device/samsung/janice/rootdir/recovery.rc
 
 # HWComposer
 BOARD_USES_HWCOMPOSER := true
